@@ -9,11 +9,11 @@ workflows:
         # ......
     android-test:
         name: android emu
-    scripts:
-      - name: Launch emulator
-        script: |
-          set -e # exit on first failed command
+        scripts:
+          - name: Launch emulator
+            script: |
+            set -e # exit on first failed command
 
-          cd $ANDROID_HOME/tools
-          emulator -avd emulator &
-          adb wait-for-device
+            cd $ANDROID_HOME/tools
+            emulator -avd emulator &
+            adb wait-for-device
