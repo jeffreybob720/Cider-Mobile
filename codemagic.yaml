@@ -7,7 +7,7 @@ workflows:
     ios-workflow-id:
         name: iOS Sample Workflow
         # ......
-  my-workflow:
+    my-workflow:
     scripts:
       - name: Launch emulator
         script: |
